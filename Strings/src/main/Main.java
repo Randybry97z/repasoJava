@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		// String = Clase
 		
-		String mensaje = "Hola, soy una cadena ";
-		System.out.println(mensaje);
+//		String mensaje = "Hola, soy una cadena ";
+//		System.out.println(mensaje);
 
 		// MÉTODOS
 		
@@ -28,22 +28,36 @@ public class Main {
 //		String cadena = mensaje.concat(" del curso de Java :v");
 //		System.out.println(cadena);
 		
-		//Uppercase && Lowercase
+//		//Uppercase && Lowercase
+//		
+//		System.out.println(mensaje.toUpperCase());
+//		
+//		System.out.println(mensaje.toLowerCase());
+//		
+//		//Trim
+//		System.out.println(mensaje.trim());
+//		
+//		//Format
+//		String curso = "Java";
+//		float valor = 10.82935f;
+//		//mensaje = String.format("Bienvenido al curso %s", curso);
+//		mensaje = String.format("El total de %d artículos es: %.2f %s", 3, valor, "MXN");
+//		System.out.println(mensaje);
+//		System.out.printf("El total de %d artículos es: %.2f %s", 3, valor, "MXN");
 		
-		System.out.println(mensaje.toUpperCase());
+		//COMPARAR CADENAS
 		
-		System.out.println(mensaje.toLowerCase());
+		String cadena1 = "Hola";
+		String cadena2 = "hola";
 		
-		//Trim
-		System.out.println(mensaje.trim());
+		//boolean resultado = cadena2.equals(cadena1);
+		boolean resultado = cadena2.equalsIgnoreCase(cadena1);
+		System.out.println(resultado);
 		
-		//Format
+		//Concat
 		String curso = "Java";
-		float valor = 10.82935f;
-		//mensaje = String.format("Bienvenido al curso %s", curso);
-		mensaje = String.format("El total de %d artículos es: %.2f %s", 3, valor, "MXN");
-		System.out.println(mensaje);
-		System.out.printf("El total de %d artículos es: %.2f %s", 3, valor, "MXN");
+		String mensaje = cadena1.concat(" bienvenido al curso de: ");
+		System.out.println(mensaje.concat(curso));
 	}
 
 }
