@@ -3,7 +3,7 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-//		// Operadores aritméticos
+		// Operadores aritméticos
 //		
 //		int variableX = 50, variableY = 10;
 //		int resultado;
@@ -27,13 +27,36 @@ public class Main {
 //		variableX --;
 		
 		//CASTING
+//		
+//		int variableX = 50, variableY = 10;
+//		float variableZ = 5.5f;
+//		float resultado;
+//		
+//		//resultado = variableX + (int)variableZ;
+//		resultado = (float)variableX + variableZ;
+//		System.out.println(resultado);
 		
-		int variableX = 50, variableY = 10;
-		float variableZ = 5.5f;
-		float resultado;
+		//OPERADORES RELACIONALES
 		
-		//resultado = variableX + (int)variableZ;
-		resultado = (float)variableX + variableZ;
+		int variable1 = 300, variable2 = 200;
+		boolean resultado;
+		
+		resultado = variable1 < variable2;
+		System.out.println(resultado);
+		
+		resultado = variable1 > variable2;
+		System.out.println(resultado);
+		
+		resultado = variable1 <= variable2;
+		System.out.println(resultado);
+		
+		resultado = variable1 >= variable2;
+		System.out.println(resultado);
+		
+		resultado = variable1 == variable2;
+		System.out.println(resultado);
+		
+		resultado = variable1 != variable2;
 		System.out.println(resultado);
 		
 	}
