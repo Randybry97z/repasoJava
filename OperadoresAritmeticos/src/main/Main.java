@@ -38,27 +38,43 @@ public class Main {
 		
 		//OPERADORES RELACIONALES
 		
-		int variable1 = 300, variable2 = 200;
+//		int variable1 = 300, variable2 = 200;
+//		boolean resultado;
+//		
+//		resultado = variable1 < variable2;
+//		System.out.println(resultado);
+//		
+//		resultado = variable1 > variable2;
+//		System.out.println(resultado);
+//		
+//		resultado = variable1 <= variable2;
+//		System.out.println(resultado);
+//		
+//		resultado = variable1 >= variable2;
+//		System.out.println(resultado);
+//		
+//		resultado = variable1 == variable2;
+//		System.out.println(resultado);
+//		
+//		resultado = variable1 != variable2;
+//		System.out.println(resultado);
+		
+		
+		//Operadores lógicos
+		//AND (&&) OR (||) NOT (!)
+		
 		boolean resultado;
 		
-		resultado = variable1 < variable2;
+		resultado = 5 >= 5 && true && 5 > 20;
 		System.out.println(resultado);
 		
-		resultado = variable1 > variable2;
+		resultado = 5 >= 5 || 5 > 20;
 		System.out.println(resultado);
 		
-		resultado = variable1 <= variable2;
+		resultado = (5 >= (2*3) || true) && (true && 10 > 5);
 		System.out.println(resultado);
 		
-		resultado = variable1 >= variable2;
-		System.out.println(resultado);
-		
-		resultado = variable1 == variable2;
-		System.out.println(resultado);
-		
-		resultado = variable1 != variable2;
-		System.out.println(resultado);
-		
+		System.out.println(!true);
 	}
 
 }
