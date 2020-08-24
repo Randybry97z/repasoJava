@@ -63,18 +63,26 @@ public class Main {
 		//Operadores lógicos
 		//AND (&&) OR (||) NOT (!)
 		
-		boolean resultado;
+//		boolean resultado;
+//		
+//		resultado = 5 >= 5 && true && 5 > 20;
+//		System.out.println(resultado);
+//		
+//		resultado = 5 >= 5 || 5 > 20;
+//		System.out.println(resultado);
+//		
+//		resultado = (5 >= (2*3) || true) && (true && 10 > 5);
+//		System.out.println(resultado);
+//		
+//		System.out.println(!true);
 		
-		resultado = 5 >= 5 && true && 5 > 20;
-		System.out.println(resultado);
+		//Operador ternario
 		
-		resultado = 5 >= 5 || 5 > 20;
-		System.out.println(resultado);
+		String mensaje = 10 > 9 ? "Es mayor" : "Es menor";
+		System.out.println(mensaje);
 		
-		resultado = (5 >= (2*3) || true) && (true && 10 > 5);
-		System.out.println(resultado);
-		
-		System.out.println(!true);
+		int enteros = true ? 1:0;
+		System.out.println(enteros);
 	}
 
 }
