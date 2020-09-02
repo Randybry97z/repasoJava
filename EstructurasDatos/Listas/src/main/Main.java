@@ -11,6 +11,8 @@ public class Main {
 		lista.agregarInicio(3);
 		lista.agregarInicio(4);
 		lista.agregarFinal(5);
+		//lista.eliminar(3);
+		lista.buscar(2);
 		lista.verLista();
 
 	}
