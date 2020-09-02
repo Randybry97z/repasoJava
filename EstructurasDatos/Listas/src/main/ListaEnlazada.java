@@ -28,21 +28,12 @@ public class ListaEnlazada {
 		
 	}
 	
-	public void buscar(int dato) {
-		boolean encontrado;
-		Nodo actual;
-		actual = primero;
-		encontrado = false;
-		
-		while(actual!=null && !encontrado) {
-			encontrado = (actual.dato == dato);
-			if(encontrado == true) {
-				System.out.println("El nodo " + actual.dato + " sí existe!");				
-			}else {
-				actual = actual.getRef();
-				System.out.println("El nodo no existe en esta posición");
-			}
-		}
+	public Nodo buscar(int dato) {
+		Nodo nodob;
+		for(nodob = primero; nodob!=null;nodob = nodob.getRef());
+			if(dato == nodob.dato)
+				return nodob;
+		return null;
 	}
 	
 	public void eliminar(int dato) {
