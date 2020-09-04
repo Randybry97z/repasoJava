@@ -6,4 +6,8 @@ public class Presentacion {
 		System.out.println(rectangulo);
 	}
 	
+	public void area(IFigura figura) {
+		System.out.println(figura.area());
+	}
+	
 }

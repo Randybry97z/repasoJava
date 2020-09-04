@@ -1,10 +1,10 @@
 package main;
 
-public class Rectangulo implements IFigura {
+public class Triangulo implements IFigura {
 	private float base;
 	private float altura;
 	
-	public Rectangulo(float base, float altura) {
+	public Triangulo(float base, float altura) {
 		this.setBase(base);
 		this.setAltura(altura);
 	}
@@ -30,14 +30,6 @@ public class Rectangulo implements IFigura {
 	}
 	
 	public float area() {
-		return this.getBase() * this.getAltura();
+		return this.getBase() * this.getAltura() / 2;
 	}
-	
-	//Responsabilidad simple no permite esto, ya que el como lo debe solucionar otra clase.
-	/*public void imprimir() {
-		System.out.println(this);
-	}*/
-	
-	
-
 }
