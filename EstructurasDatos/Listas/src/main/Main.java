@@ -6,12 +6,14 @@ package main;
 public class Main {
 
 	public static void main(String[] args) {
-		ListaEnlazadaDoble lista = new ListaEnlazadaDoble();
+		ListaEnlazadaDobleCircular lista = new ListaEnlazadaDobleCircular();
 		lista.agregar(1);
 		lista.agregar(2);
 		lista.agregar(3);
-		lista.agregarInicio(4);
-		lista.verLista();
+		lista.agregar(4);
+		lista.agregar(5);
+		lista.eliminar(2);
+		lista.ver();
 
 	}
 
